@@ -232,6 +232,17 @@ body {
   color: #17a2b8;
 }
 
+/* Main content background */
+.main-content {
+  width: 100%;
+  height: 368px;                /* Matches your image height */
+  background-image: url("../images/main_content.jpg");  /* change to correct filename */
+  background-size: cover;       /* Ensures full coverage */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Avoids tiling */
+}
+
+
 /* Responsive adjustments */
 @media screen and (max-width: 1024px) {
   .desktop-header {
