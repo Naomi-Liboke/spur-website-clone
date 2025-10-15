@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find a Spur</title>
+  <link rel="stylesheet" href="css/find-a-spur.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header data-component="header">
+    <div class="desktop-header">
+
+      <!-- Left Section: Search + Socials -->
+      <div class="header-left">
+        <div class="search">
+          <img src="images/search_icon.png" alt="Search" class="search-icon" />
+          <input name="keyword" type="text" placeholder="SEARCH" />
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/SpurSteakRanches/" target="_blank">
+            <img src="images/facebook_icon.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/SpurSteakRanches/" target="_blank">
+            <img src="images/instagram_icon.png" alt="Instagram" />
+          </a>
+          <a href="https://twitter.com/SpurSteakRanches/" target="_blank">
+            <img src="images/x_icon.png" alt="X (Twitter)" />
+          </a>
+          <a href="https://www.youtube.com/SpurSteakRanches" target="_blank">
+            <img src="images/youtube_icon.png" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Center Logo in Header -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/spur_logo.png" alt="Spur Steak Ranches Logo" />
+        </a>
+      </div>
+
+      <!-- Right Section: Book Now + Country Selector -->
+      <div class="header-right">
+        <a href="#" class="btn btn-red btn-slim mr-0 book">
+            BOOK NOW
+        </a>
+
+        <div class="country-select">
+          <div class="country-label">
+            SOUTH AFRICA
+            <i class="country-icon fas fa-angle-down"></i>
+          </div>
+          <ul class="country-list">
+            <li><a href="/bw">BOTSWANA</a></li>
+            <li><a href="/sz">ESWATINI</a></li>
+            <li><a href="/ke">KENYA</a></li>
+            <li><a href="/ls">LESOTHO</a></li>
+            <li><a href="/mu">MAURITIUS</a></li>
+            <li><a href="/na">NAMIBIA</a></li>
+            <li><a href="/ng">NIGERIA</a></li>
+            <li><a href="/za">ZAMBIA</a></li>
+            <li><a href="/zw">ZIMBABWE</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+    <div class="container px-0 main-bar">
+        <div class="nav-group nav1">
+        <div class="wrap"><a href="#">Menu</a></div>
+        <div class="wrap"><a href="#">Find A Spur</a></div>
+        <div class="wrap"><a href="#">Plan a party</a></div>
+        <div class="wrap"><a href="#">Promos</a></div>
+        </div>
+
+        <div class="nav-group nav2">
+        <div class="wrap"><a href="#">Join the family</a></div>
+        <div class="wrap"><a href="#">Buy Vouchers</a></div>
+        <div class="wrap"><a href="#">Partners</a></div>
+        </div>
+    </div>
+    </nav> 
+
+    <!-- Main Content -->
+    <main class="main-wrapper">
+      <div class="main-content1"></div>
+      <div class="main-content2"></div>
+    </main>
+
+    <main class="text-center">
+      <h1>Spur is everywhere</h1>
+    </main>
+    <main class="paragraph">
+      <p>Looking for a Spur restaurant near you? Search by using one of the options below. 
+        Our child-friendly restaurants offer a warm, relaxed environment, 
+        generous portions of great-tasting food and outstanding quality! 
+        All Spurs offer an awesome kids’ play area that’ll keep the little ones entertained for hours. 
+        We’ve been creating special memories for families for over 50 years, 
+        and have grown into an internationally recognised brand with many local and international restaurants. 
+        Find your nearest Spur restaurant below and join us for a mouth-watering meal!</p>
+    </main>
+    <main class="text-center2">
+      <h2>Select your nearest restaurant</h2>
+    </main>
+
+    <div class="location-options-wrapper">
+  <!-- Block 1 -->
+  <div class="option-box">
+    <label class="custom-checkbox-label">
+      <input type="checkbox" class="custom-checkbox">
+      <span class="checkmark"></span>
+      <span class="label-text">USE MY CURRENT LOCATION</span>
+    </label>
+  </div>
+
+  <!-- OR Block -->
+  <div class="or-separator">
+    <span>OR</span>
+  </div>
+
+  <!-- Block 3 -->
+  <div class="option-box">
+    <label for="location-search" class="search-label">SEARCH BY LOCATION</label>
+    <input type="text" id="location-search" placeholder="Name of city, area or branch...">
+  </div>
+</div>
+  
+  <!-- Preferences Section -->
+  <div class="restaurant-preferences">
+    <h3>Select your restaurant preferences</h3>
+
+    <div class="preferences-row">
+      <label><input type="checkbox"> Free Wifi</label>
+      <label><input type="checkbox"> Generator</label>
+      <label><input type="checkbox"> Disabled Facilities</label>
+      <label><input type="checkbox"> Play Canyon</label>
+      <label><input type="checkbox"> Spur Ordering</label>
+    </div>
+
+    <div class="preferences-row">
+      <label><input type="checkbox"> M R D</label>
+      <label><input type="checkbox"> Uber Eats</label>
+      <label><input type="checkbox"> Smoking Area</label>
+      <label><input type="checkbox"> Halal</label>
+      <label><input type="checkbox"> Call & Collect</label>
+    </div>
+  </div>
+  <div class="preferences-actions">
+    <button class="submit-btn">SUBMIT</button>
+    <button class="clear-btn">CLEAR ALL</button>
+  </div>
+
+  <!-- Divider Line -->
+  <hr class="results-divider">
+
+  <!-- Results Row -->
+  <div class="results-row">
+    <div class="results-block">
+      <span class="yellow-icon">★</span>
+      <span><strong>RESULTS:</strong> 322 Spur Locations Nearby</span>
+    </div>
+
+    <div class="results-block">
+      <span class="yellow-icon">★</span>
+      <span><strong>Nearest location:</strong> 7 Eagles Spur</span>
+    </div>
+  </div>
+
+  <div class="restaurant-cards">
+  <!-- Card 1 -->
+  <div class="card">
+    <h4>7 Eagles Spur Lethabong</h4>
+    <hr class="card-divider">
+    <p><img src="images/location_icon.png" alt="Location" class="icon"> Shop TX03, Greenstone Mall</p>
+    <p><img src="images/letter_icon.png" alt="Email" class="icon"> Email: <a href="mailto:7eagles@spursteakranch.co.za">7eagles@spursteakranch.co.za</a></p>
+    <p><img src="images/telephone_icon.png" alt="Phone" class="icon"> Tel: <a href="tel:0114522987">0114522987</a></p>
+    <div class="amenities">
+      <img src="images/wifi_icon.png" alt="Wi-Fi" class="amenity-icon">
+      <img src="images/internet_icon.png" alt="Internet" class="amenity-icon">
+      <img src="images/wheelchair_icon.png" alt="Wheelchair Access" class="amenity-icon">
+    </div>
+    <button class="info-btn">INFO</button>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <h4>Abenaki Spur Cape Town</h4>
+    <hr class="card-divider">
+    <p><img src="images/location_icon.png" alt="Location" class="icon"> Shop H14, Liberty Promenade</p>
+    <p><img src="images/letter_icon.png" alt="Email" class="icon"> Email: <a href="mailto:abenaki@spursteakranch.co.za">abenaki@spursteakranch.co.za</a></p>
+    <p><img src="images/telephone_icon.png" alt="Phone" class="icon"> Tel: <a href="tel:0213976800">0213976800</a></p>
+    <div class="amenities">
+      <img src="images/wifi_icon.png" alt="Wi-Fi" class="amenity-icon">
+      <img src="images/internet_icon.png" alt="Internet" class="amenity-icon">
+      <img src="images/wheelchair_icon.png" alt="Wheelchair Access" class="amenity-icon">
+    </div>
+    <button class="info-btn">INFO</button>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <h4>Acapulco Spur Cape Town</h4>
+    <hr class="card-divider">
+    <p><img src="images/location_icon.png" alt="Location" class="icon"> Glen Alpine Centre</p>
+    <p><img src="images/letter_icon.png" alt="Email" class="icon"> Email: <a href="mailto:acapulco@spursteakranch.co.za">acapulco@spursteakranch.co.za</a></p>
+    <p><img src="images/telephone_icon.png" alt="Phone" class="icon"> Tel: <a href="tel:0219038022">0219038022</a></p>
+    <div class="amenities">
+      <img src="images/wifi_icon.png" alt="Wi-Fi" class="amenity-icon">
+      <img src="images/internet_icon.png" alt="Internet" class="amenity-icon">
+      <img src="images/wheelchair_icon.png" alt="Wheelchair Access" class="amenity-icon">
+    </div>
+    <button class="info-btn">INFO</button>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <h4>Alaska Spur Bloemfontein</h4>
+    <hr class="card-divider">
+    <p><img src="images/location_icon.png" alt="Location" class="icon"> Shop U28 & U21, Mimosa Mall</p>
+    <p><img src="images/letter_icon.png" alt="Email" class="icon"> Email: <a href="mailto:alaska@spursteakranch.co.za">alaska@spursteakranch.co.za</a></p>
+    <p><img src="images/telephone_icon.png" alt="Phone" class="icon"> Tel: <a href="tel:0514444069">0514444069</a></p>
+    <div class="amenities">
+      <img src="images/wifi_icon.png" alt="Wi-Fi" class="amenity-icon">
+      <img src="images/internet_icon.png" alt="Internet" class="amenity-icon">
+      <img src="images/wheelchair_icon.png" alt="Wheelchair Access" class="amenity-icon">
+    </div>
+    <button class="info-btn">INFO</button>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <h4>Alamo Spur Cape Town</h4>
+    <hr class="card-divider">
+    <p><img src="images/location_icon.png" alt="Location" class="icon"> Shop 566, Tyger Valley Shopping Centre</p>
+    <p><img src="images/letter_icon.png" alt="Email" class="icon"> Email: <a href="mailto:alamo@spursteakranch.co.za">alamo@spursteakranch.co.za</a></p>
+    <p><img src="images/telephone_icon.png" alt="Phone" class="icon"> Tel: <a href="tel:0219145808">0219145808</a></p>
+    <div class="amenities">
+      <img src="images/wifi_icon.png" alt="Wi-Fi" class="amenity-icon">
+      <img src="images/internet_icon.png" alt="Internet" class="amenity-icon">
+      <img src="images/wheelchair_icon.png" alt="Wheelchair Access" class="amenity-icon">
+    </div>
+    <button class="info-btn">INFO</button>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card">
+    <h4>Alaska Spur Benoni</h4>
+    <hr class="card-divider">
+    <p><img src="images/location_icon.png" alt="Location" class="icon"> Shop ST-38, Lakeside Mall</p>
+    <p><img src="images/letter_icon.png" alt="Email" class="icon"> Email: <a href="mailto:alaska@spursteakranch.co.za">alaska@spursteakranch.co.za</a></p>
+    <p><img src="images/telephone_icon.png" alt="Phone" class="icon"> Tel: <a href="tel:0114271740">0114271740</a></p>
+    <div class="amenities">
+      <img src="images/wifi_icon.png" alt="Wi-Fi" class="amenity-icon">
+      <img src="images/internet_icon.png" alt="Internet" class="amenity-icon">
+      <img src="images/wheelchair_icon.png" alt="Wheelchair Access" class="amenity-icon">
+    </div>
+    <button class="info-btn">INFO</button>
+  </div>
+</div>
+
+  <div class="contact-wrapper">
+    <!-- Left Panel: Contact Info -->
+    <div class="contact-left">
+      <div class="contact-overlay">
+        <h3>HAVEN'T FOUND WHAT YOU'RE LOOKING FOR?<br>SPEAK TO US</h3>
+        <p>Call customer care: <strong>0860 007 787</strong></p>
+        <p>Email customer care: <strong>customer-care@spur.co.za</strong></p>
+        <button class="contact-btn">CONTACT US</button>
+      </div>
+    </div>
+
+    <!-- Right Panel: Food Image -->
+    <div class="contact-right"></div>
+  </div>
+
+  <div class="spur-nav-section">
+  <!-- Logo -->
+  <div class="spur-nav-logo">
+    <img src="images/Spur-LogoMain.png" alt="Spur Steak Ranches Logo">
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="spur-nav-links">
+    <ul>
+      <li><a href="#">Order Online</a></li>
+      <li><a href="#">Find a Spur</a></li>
+      <li><a href="#">Specials & Competitions</a></li>
+      <li><a href="#">Spur Kids</a></li>
+      <li><a href="#">Franchising</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Nutrition</a></li>
+      <li><a href="#">Awards</a></li>
+      <li><a href="#">Our Story</a></li>
+      <li><a href="#">Sustainability</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Spur Sauces</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Press Releases</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+  </div>
+
+  <!-- Customer Care -->
+  <div class="spur-nav-contact">
+    <p>Spur Customer Care</p>
+    <p class="spur-care-number">0860 007 787</p>
+      <button class="spur-order-btn">ORDER NOW</button>
+  </div>
+</div>
+  <footer class="spur-footer">
+  <div class="footer-left">
+    <img src="images/SpurCorp.png" alt="Spur Corp Logo">
+    <p class="footer-tagline">LEADING FOR THE GREATER GOOD</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">© 2005 Spur Corporation</a>
+    <a href="#">Full Tummy Fund</a>
+    <a href="#">Investors</a>
+    <a href="#">Health Safety Standards</a>
+    <a href="#">Terms and Conditions</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Disclaimer</a>
+  </div>
+</footer>
+
+</html>
+</body>
+
+
+
+
+
+
+
+
+
+
