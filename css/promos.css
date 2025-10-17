@@ -355,17 +355,48 @@ body {
   color: var(--primary);      /* Navy blue color from your variables */
   margin: 60px 0 30px;        /* Top and bottom spacing */
 }
-.promo-card {
-  position: relative;
-  margin: 20px auto;
-  max-width: 1014px;
+/* Promo Section Title */
+.promo-title-1 {
+    font-family: 'Snug', 'Montserrat', sans-serif; /* matches site font */
+    font-weight: 700;          /* very bold */
+    font-size: 30px;         
+    line-height: 1.1;          /* tight line height */
+    letter-spacing: 0;         /* no extra spacing */
+    text-align: center;        /* center text */
+    text-transform: uppercase; /* all caps */
+    color: #0b245c;            /* navy blue like site */
+    margin: 40px 0 20px 0;     /* top and bottom spacing */
 }
 
-.promo-card-container {
-  position: relative;
-  overflow: hidden;
+/* Responsive: smaller screens */
+@media (max-width: 768px) {
+    .promo-title-1 {
+        font-size: 32px;       /* smaller font on mobile */
+        line-height: 1.2;
+    }
+}
+
+/* Promotions Slider Section */
+.promotions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f6f6f6;
+}
+
+.promo-card {
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
 }
 
 .promo-card-img {
@@ -374,59 +405,250 @@ body {
 }
 
 .promo-card-box {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background: rgba(0,0,0,0.55);
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
 }
 
-.promo-title p {
-  font-size: 24px;
+.promo-title {
+  font-family: 'Snug', 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #0b245c;
+  margin-bottom: 10px;
+}
+
+.promo-price {
+  display: block;
+  color: #fa6300;
   font-weight: 700;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .promo-description p {
-  font-size: 16px;
-  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 10px;
 }
 
 .promo-details-arrow {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  gap: 5px;
+  font-weight: 700;
+  color: #000f55;
   cursor: pointer;
 }
 
-.promo-details {
-  font-weight: 700;
-  margin-right: 10px;
-  text-transform: uppercase;
+.promo-arrow {
+  font-size: 14px;
 }
 
-.promo-arrow i {
+/* Promo Section Title */
+.promo-title-1 {
+  font-family: 'Snug', 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 50px;
+  color: #0b245c; /* Dark blue from Spur */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph below title */
+.promo-title-1 + p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 16px;
+  color: #555; /* Gray text for subtitle */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+/* Full background section */
+.full-background {
+  background-color: #f6f6f6; /* Light gray background */
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Social media logos container */
+.logo-container {
+  display: flex;
+  gap: 20px; /* Space between logos */
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual logo styling */
+.logo img {
+  width: 50px;  /* Adjust as needed */
+  height: 50px;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
-/* Responsive */
+.logo img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  cursor: pointer;
+}
+
+/* Centered text under logos */
+.centered-text h2 {
+  font-family: 'Snug', 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: #0b245c; /* Spur dark blue */
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .promo-card-box {
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    padding: 15px;
+  .logo img {
+    width: 40px;
+    height: 40px;
   }
 
-  .promo-title p {
-    font-size: 20px;
+  .centered-text h2 {
+    font-size: 22px;
   }
+}
 
-  .promo-description p {
+/* Footer General */
+footer {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #003366;
+    width: 100%;
     font-size: 14px;
-  }
+    line-height: 1.4;
+}
+
+/* Remove default list styling */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: #003366;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Desktop Footer */
+.desktop-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-footer .top {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.desktop-footer .top > div {
+    flex: 1;
+}
+
+.desktop-footer img {
+    max-width: 150px;
+}
+
+.desktop-footer .large-menu ul li {
+    margin-bottom: 8px;
+}
+
+.desktop-footer .small-menu div {
+    margin-bottom: 5px;
+}
+
+.desktop-footer .book a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #003366;
+    color: #003366;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.desktop-footer .book a:hover {
+    background-color: #003366;
+    color: #fff;
+}
+
+.desktop-footer .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* Mobile Footer */
+.mobile-footer {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.mobile-footer img {
+    max-width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.mobile-footer .book a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #003366;
+    color: #003366;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.mobile-footer .menu-main,
+.mobile-footer .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.mobile-footer .care-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.mobile-footer .care-no,
+.mobile-footer .copyright {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Show/Hide for responsive */
+@media (max-width: 767px) {
+    .desktop-footer { display: none; }
+    .mobile-footer { display: flex; }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -73,118 +73,186 @@
     <nav class="main-nav">
     <div class="container px-0 main-bar">
         <div class="nav-group nav1">
-        <div class="wrap"><a href="#">Menu</a></div>
-        <div class="wrap"><a href="#">Find A Spur</a></div>
-        <div class="wrap"><a href="#">Plan a party</a></div>
-        <div class="wrap"><a href="#">Promos</a></div>
+        <div class="wrap"><a href="menu.html">Menu</a></div>
+        <div class="wrap"><a href="find-a-spur.html">Find A Spur</a></div>
+        <div class="wrap"><a href="plan-a-party.html">Plan a party</a></div>
+        <div class="wrap"><a href="promos.html">Promos</a></div>
         </div>
 
         <div class="nav-group nav2">
-        <div class="wrap"><a href="#">Join the family</a></div>
-        <div class="wrap"><a href="#">Buy Vouchers</a></div>
-        <div class="wrap"><a href="#">Partners</a></div>
+        <div class="wrap"><a href="join-the-family.html">Join the family</a></div>
+        <div class="wrap"><a href="buy-vouchers.html">Buy Vouchers</a></div>
+        <div class="wrap"><a href="partners.html">Partners</a></div>
         </div>
     </div>
     </nav>
 
-    <!-- add code here -->
-     <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buy Voucher | Spur Steak Ranches</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="buy-voucher.css">
-</head>
-<body>
+<!-- Buy Voucher Header Section -->
+<header class="header-banner desktop">
+  <section class="text-blurb text-center">
+    <h3>E-Gift Vouchers</h3>
+    <p>
+      Buy family, friends or staff a Spur eGift Voucher for any occasion.<br>
+      We'll send a code via Email or SMS, for them to redeem in-restaurant.<br>
+      Now that's quick and easy!
+    </p>
+    <div class="overlay"></div>
+  </section>
+</header>
 
-  <header>
-    <img src="images/Spur-LogoMain.png" alt="Spur Steak Ranches Logo">
-    
-  </header>
+<main class="buy-voucher">
+  <!-- Button blocks -->
+  <div class="button-block-wrapper">
+    <section class="button-block individual-block text-center">
+      <h4>For Individuals</h4>
+      <p>Buy vouchers for friends or loved ones.</p>
+      <a href="/za/gift-vouchers/step-1" class="btn-red">Buy a Voucher</a>
+    </section>
 
-  <section class="hero">
-    <h1>E-Gift Vouchers</h1>
-    <p>Buy family, friends or staff a Spur eGift Voucher for any occasion.<br>
-    We'll send a code via Email or SMS, for them to redeem in-restaurant.<br>
-    Now that's quick and easy!</p>
+    <section class="button-block business-block text-center">
+      <h4>For Businesses</h4>
+      <p>Buy vouchers to incentivize your staff or team.</p>
+      <a href="https://spurcorpgifting.com/" target="_blank" class="btn-white">Register Here</a>
+    </section>
+  </div>
+
+  <!-- Voucher info slides (static version) -->
+  <section class="voucher-slides">
+    <article class="slide text-center">
+      <h6>The perfect gift if you have a taste for life!</h6>
+      <div class="img-wrapper">
+        <img src="images/sms.png" alt="Voucher phone" width="65">
+      </div>
+      <p>Voucher codes are sent to the recipient's mobile (via email or SMS) to <strong>redeem at their nearest neighbourhood Spur.</strong></p>
+    </article>
+
+    <article class="slide text-center">
+      <h6>The perfect gift if you have a taste for life!</h6>
+      <div class="img-wrapper">
+        <img src="images/gift.png" alt="Voucher send" width="120">
+      </div>
+      <p>It's a <strong>quick, easy and convenient</strong> way to treat friends, family or staff for <strong>any occasion</strong>.</p>
+    </article>
+
+    <article class="slide text-center">
+      <h6>The perfect gift if you have a taste for life!</h6>
+      <div class="img-wrapper">
+        <img src="images/persnalized message.png" alt="Voucher theme" width="100">
+      </div>
+      <p>A <strong>personalised message</strong> and occasion-themed <strong>digital e-card</strong> of your choice will be emailed to the recipient.</p>
+    </article>
+
+    <article class="slide text-center">
+      <h6>The perfect gift if you have a taste for life!</h6>
+      <div class="img-wrapper">
+        <img src="images/safe.png" alt="Secure voucher" width="80">
+      </div>
+      <p>Buy vouchers <strong>safely & securely</strong> with your credit or debit card. Vouchers valid for <strong>3 years.</strong></p>
+    </article>
   </section>
 
-  <div class="steps">
-    <span class="active">1. YOUR DETAILS</span>
-    
+  <!-- Notice -->
+  <div class="voucher-notice text-center">
+    <p>
+      Please note as per our payment terms, you will only be able to purchase up to R2000 per gift voucher. Additionally, purchases are limited to 5 gift vouchers per checkout, with 2 checkouts over a 24 hour window. The maximum spend per checkout is R10,000 and the maximum spend per 24 hours is R20,000.
+    </p>
   </div>
+</main>
 
-  <section class="form-section">
-    <form>
-      <label for="fname">First Name*</label>
-      <input type="text" id="fname" name="fname" required>
-
-      <label for="lname">Last Name*</label>
-      <input type="text" id="lname" name="lname" required>
-
-      <label for="email">Your Email*</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="phone">Phone Number</label>
-      <div class="phone-input">
-        <input type="text" value="+27" readonly>
-        <input type="tel" id="phone" name="phone" required>
+<footer>
+  <!-- Desktop Footer -->
+  <div class="desktop-footer">
+    <div class="top">
+      <div>
+        <img src="images/logo4.png" alt="Spur Steak Ranches logo">
       </div>
-
-      <div class="checkbox">
-        <input type="checkbox" id="terms" required>
-        <label for="terms">I accept the Terms & Conditions</label>
+      <div class="large-menu">
+        <ul>
+          <li><a href="/za/spuronlineorders">Order Online</a></li>
+          <li><a href="/za/find-a-spur">Find A Spur</a></li>
+          <li><a href="/za/specials-and-competitions">Specials & Competitions</a></li>
+          <li><a href="/za/birthdays-at-spur">Spur Kids</a></li>
+          <li><a href="/za/franchise">Franchising</a></li>
+        </ul>
       </div>
-
-      <button type="submit">NEXT STEP</button>
-    </form>
-
-   
- <img src="https://www.spursteakranches.com/gifting/img/gifting-step-1.png" alt="Spur Gifting image - man smiling while looking at his phone">
- <img src="images/dessert.jpeg" alt="spur desert">
-</section>
-
-  <div class="notice">
-    <p>Please note as per our payment terms, you will only be able to purchase up to R2000 per gift voucher. Additionally, purchases are limited to 5 gift vouchers per checkout, with 2 checkouts over a 24 hour window. The maximum spend per checkout is R10,000 and the maximum spend per 24 hours is R20,000.</p>
-  </div>
-
-  <footer>
-    <div class="footer-links">
-      <ul>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Nutrition</a></li>
-        <li><a href="#">Spur Sauces</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Awards</a></li>
-        <li><a href="#">Press Releases</a></li>
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Sustainability</a></li>
-        <li><a href="#">ORDER NOW</a></li>
-      </ul>
+      <div class="small-menu">
+        <div><a href="/za/contact">Contact us</a></div>
+        <div><a href="/za/faq">FAQs</a></div>
+        <div><a href="/uploads/bottom_nav/19707S-Nutritional-Analysis-24-FA.pdf" target="_blank">Nutrition</a></div>
+        <div><a href="https://spursauces.co.za" target="_blank">Spur Sauces</a></div>
+        <div><a href="/za/our-story">Awards</a></div>
+        <div><a href="https://spurcorporation.com/latest-news/" target="_blank">Press Releases</a></div>
+        <div><a href="/za/our-story">Our Story</a></div>
+        <div><a href="/za/faq/general">Careers</a></div>
+        <div><a href="/za/our-eco-journey">Sustainability</a></div>
+      </div>
+      <div>
+        <div class="book">
+          <a href="/za/spuronlineorders">Order now</a>
+        </div>
+        <div class="customer-care mt-3">
+          <div>Spur Customer Care</div>
+          <div><a href="tel:0860007787">0860 007 787</a></div>
+        </div>
+      </div>
     </div>
-    <p>Spur Customer Care | 0860 007 787</p>
-    <p>© 2025 Spur Corporation | Full Tummy Fund | Investors | Health & Safety Standards | Terms and Conditions | Privacy Policy | Disclaimer</p>
-  </footer>
+    <div class="bottom">
+      <a href="https://www.spurcorporation.com/" target="_blank">
+        <img src="images/logo3.png" alt="Spur Corporation logo" style="max-width: 100px;">
+      </a>
+      <span>© 2025 Spur Corporation</span>
+      <a href="https://fulltummyfund.co.za/" target="_blank">Full Tummy Fund</a>
+      <a href="/za/legal">Investors</a>
+      <a href="/za/legal">Health Safety Standards</a>
+      <a href="/za/legal">Terms and Conditions</a>
+      <a href="/za/legal">Privacy Policy</a>
+      <a href="/za/legal">Disclaimer</a>
+    </div>
+  </div>
 
+  <!-- Mobile Footer -->
+  <div class="mobile-footer">
+    <div class="logo-wrapper mb-3">
+      <img src="images/logo2.png" alt="Spur Steak Ranches logo">
+    </div>
+    <div class="book mb-3">
+      <a href="/za/spuronlineorders">Order now</a>
+    </div>
+    <div class="menu-main mb-3">
+      <div><a href="/za/contact">Contact us</a></div>
+      <div><a href="/za/faq">FAQs</a></div>
+      <div><a href="/uploads/bottom_nav/19707S-Nutritional-Analysis-24-FA.pdf" target="_blank">Nutrition</a></div>
+      <div><a href="https://spursauces.co.za" target="_blank">Spur Sauces</a></div>
+      <div><a href="/za/our-story">Awards</a></div>
+      <div><a href="https://spurcorporation.com/latest-news/" target="_blank">Press Releases</a></div>
+      <div><a href="/za/our-story">Our Story</a></div>
+      <div><a href="/za/faq/general">Careers</a></div>
+      <div><a href="/za/our-eco-journey">Sustainability</a></div>
+    </div>
+    <div class="care mb-3 text-center">
+      <div class="care-title">Spur Customer Care</div>
+      <div class="care-no"><a href="tel:0860 007 787">0860 007 787</a></div>
+      <div><a href="/za/contact">Contact Us</a></div>
+    </div>
+    <div class="menu mb-3 text-center">
+      <a href="https://fulltummyfund.co.za/" target="_blank">Full Tummy Fund</a> |
+      <a href="/za/legal">Investors</a> |
+      <a href="/za/legal">Health Safety Standards</a> |
+      <a href="/za/legal">Terms and Conditions</a> |
+      <a href="/za/legal">Privacy Policy</a> |
+      <a href="/za/legal">Disclaimer</a>
+    </div>
+    <div class="logo text-center mb-2">
+      <img src="images/logo3.png" alt="Spur Corporation logo" style="max-width: 100px;">
+    </div>
+    <div class="copyright text-center mb-4">© 2025 Spur Corporation Clone</div>
+  </div>
+</footer>
 
 </body>
 </html>
 
-    
-  </script>
-</body>
-</html>
 
-
-</body>
-</html>
 
 
 
