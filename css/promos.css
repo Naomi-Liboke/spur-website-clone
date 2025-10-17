@@ -242,9 +242,6 @@ body {
   background-repeat: no-repeat; /* Avoids tiling */
 }
 
-/* Add Code Here */
-
-
 /* Responsive adjustments */
 @media screen and (max-width: 1024px) {
   .desktop-header {
